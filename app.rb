@@ -13,6 +13,5 @@ configure(:development){ p "RUNNING IN DEVELOPMENT ENVIRONMENT" }
 
 
 get '/' do 
-  "Hello world"
- 
+  erb :index
 end
