@@ -153,3 +153,17 @@ html[xmlns] .slides {
     opacity: 1;
     right: 0;
 }
+.flexslider .slides li {
+    position:relative;
+}
+
+.flex-caption {
+    position:absolute;
+    color: #fff;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#000; /* whatever you want */    
+    z-index:1;
+    padding:5px;
+}
