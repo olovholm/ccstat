@@ -37,28 +37,46 @@ ay.pie_chart('which_devices',
 
 				var graph1 = new Rickshaw.Graph({
 					element: document.querySelector("#when_stream"),
-					width: 700,
+					width: 750,
 					height: 400,
 					renderer: 'line',
 					series: [{
-						data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 38 }, { x: 3, y: 30 }, { x: 4, y: 32 } ],
+						data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 38 }, { x: 3, y: 30 }, { x: 4, y: 32 },
+						{ x: 5, y: 40 }, { x: 6, y: 24 }, { x: 7, y: 19 }, { x: 8, y: 35 }, { x: 9, y: 16 },
+						{ x: 10, y: 40 }, { x: 11, y: 24 }, { x: 12, y: 19 }, { x: 13, y: 35 }, { x: 14, y: 16 },
+						{ x: 15, y: 40 }, { x: 16, y: 24 }, { x: 17, y: 19 }, { x: 18, y: 35 }, { x: 19, y: 16 },
+						{ x: 20, y: 40 }, { x: 21, y: 24 }, { x: 22, y: 19 }, { x: 23, y: 35 }, { x: 24, y: 50 }],
 						color: '#4682b4'
-					}, {
-						data: [ { x: 0, y: 20 }, { x: 1, y: 24 }, { x: 2, y: 19 }, { x: 3, y: 15 }, { x: 4, y: 16 } ],
-						color: '#9cc1e0'
 					}]
 				});
 				
 				var format = function(n) {
-
 					var map = {
-						0: 'zero',
-						1: 'first',
-						2: 'second',
-						3: 'third',
-						4: 'fourth'
+						0: '06',
+						1: '07',
+						2: '08',
+						3: '09',
+						4: '10',
+						5: '11',
+						6: '12',
+						7: '13',
+						8: '14',
+						9: '15',
+						10: '16',
+						11: '17',
+						12: '18',
+						13: '19',
+						14: '20',
+						15: '21',
+						16: '22',
+						17: '23',
+						18: '00',
+						19: '01',
+						20: '02',
+						21: '03',
+						22: '04',
+						23: '05'
 					};
-
 					return map[n];
 				}
 
@@ -73,18 +91,57 @@ ay.pie_chart('which_devices',
 				
 				var graph2 = new Rickshaw.Graph({
 					element: document.querySelector("#when_search"),
-					width: 700,
-					height: 200,
+					width: 750,
+					height: 400,
 					renderer: 'line',
 					series: [{
-						data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 38 }, { x: 3, y: 30 }, { x: 4, y: 32 } ],
+						data: [ { x: 0, y: 40 }, { x: 1, y: 49 }, { x: 2, y: 38 }, { x: 3, y: 30 }, { x: 4, y: 32 },
+						{ x: 5, y: 40 }, { x: 6, y: 24 }, { x: 7, y: 19 }, { x: 8, y: 35 }, { x: 9, y: 16 },
+						{ x: 10, y: 40 }, { x: 11, y: 24 }, { x: 12, y: 19 }, { x: 13, y: 35 }, { x: 14, y: 16 },
+						{ x: 15, y: 40 }, { x: 16, y: 24 }, { x: 17, y: 19 }, { x: 18, y: 35 }, { x: 19, y: 16 },
+						{ x: 20, y: 40 }, { x: 21, y: 24 }, { x: 22, y: 19 }, { x: 23, y: 35 }, { x: 24, y: 50 }],
 						color: '#4682b4'
-					}, {
-						data: [ { x: 0, y: 20 }, { x: 1, y: 24 }, { x: 2, y: 19 }, { x: 3, y: 15 }, { x: 4, y: 16 } ],
-						color: '#9cc1e0'
 					}]
 				});
-				graph2.render();	
+				
+				var format = function(n) {
+					var map = {
+						0: '06',
+						1: '07',
+						2: '08',
+						3: '09',
+						4: '10',
+						5: '11',
+						6: '12',
+						7: '13',
+						8: '14',
+						9: '15',
+						10: '16',
+						11: '17',
+						12: '18',
+						13: '19',
+						14: '20',
+						15: '21',
+						16: '22',
+						17: '23',
+						18: '00',
+						19: '01',
+						20: '02',
+						21: '03',
+						22: '04',
+						23: '05'
+					};
+					return map[n];
+				}
+
+				var x_ticks = new Rickshaw.Graph.Axis.X( {
+					graph: graph2,
+					orientation: 'bottom',
+					element: document.getElementById('x_axis'),
+					tickFormat: format
+				} );
+				
+				graph2.render();
 
 $(window).scroll(function(){ 
 		var offset = 0;
