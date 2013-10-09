@@ -16,6 +16,12 @@ $(function () {
   });
 });
 	
+ay.pie_chart('which_genres', [{index:1,
+	name: "test1", 
+	value: 12},
+	{index:2,
+		name: "test2", 
+		value: 6}], {percentage: true});
 
 
 $(window).scroll(function(){ 
