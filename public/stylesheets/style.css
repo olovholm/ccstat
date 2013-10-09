@@ -344,3 +344,23 @@ div.bar {
 	svg > g.labels g.label rect { stroke: none; fill: #fff; fill-opacity: .5; shape-rendering: crispEdges; }
 	svg > g.labels g.label text { font-size: 12px; text-anchor: left; }
 	svg > g.labels g.label.active rect { fill-opacity: 1; }
+
+
+/* Rickshaw specific */
+
+#chart {
+	position: relative;
+	left: 40px;
+	display: block;
+}
+#y_axis {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 40px;
+}
+#x_axis {
+	position: relative;
+	left: 40px;
+	height: 40px;
+}
