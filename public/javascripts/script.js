@@ -22,6 +22,17 @@ ay.pie_chart('which_genres', [{index:1,
 	{index:2,
 		name: "test2", 
 		value: 6}], {percentage: true});
+		
+ay.pie_chart('which_devices', 
+			[{index:1,
+				name: "test1", 
+				value: 12},
+			{index:2,
+				name: "test2", 
+				value: 6},
+			{index:3,
+				name: "test3", 
+				value: 9}], {percentage: true});
 
 
 $(window).scroll(function(){ 

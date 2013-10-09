@@ -301,7 +301,19 @@ div.bar {
 
 /* Pie chart specific */
 
-.chart { float: left; width: 400px; height: 400px; background: #eee; margin: 0 20px 0 0; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.chart {
+	display: block; 
+	margin: auto; 
+	width: 400px; 
+	height: 400px; 
+	background: #fff; 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
 	
 	svg { width: 100%; height: 100%; }
 	
