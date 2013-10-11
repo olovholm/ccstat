@@ -1,10 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-<<<<<<< HEAD
-=======
-    nokogiri (1.5.6)
->>>>>>> f4e2f235779371292a602297f3e8d0b72a1d811f
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -18,9 +14,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
   sinatra
-=======
-  nokogiri
-  sinatra (= 1.4.3)
->>>>>>> f4e2f235779371292a602297f3e8d0b72a1d811f

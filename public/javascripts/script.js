@@ -2,10 +2,9 @@ $(function () {
 	  var chart1;
     var chart2;
     
+    
     $(document).ready(function() {
       scrollspyer();
-		var chart1;
-    var chart2;
       
 
       /* Ready the flexslider */
