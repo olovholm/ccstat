@@ -152,6 +152,7 @@ html[xmlns] .slides {
 .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0;
+<<<<<<< HEAD
 }
 .flexslider .slides li {
     position:relative;
@@ -166,4 +167,6 @@ html[xmlns] .slides {
     background:#000; /* whatever you want */    
     z-index:1;
     padding:5px;
+=======
+>>>>>>> f4e2f235779371292a602297f3e8d0b72a1d811f
 }
