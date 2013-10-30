@@ -7,10 +7,5 @@ group :development do
   gem 'rack-test'
   gem 'rake'
   gem 'guard'
-  gem "guard-minitest"
-  
-group :test do 
-  gem 'coveralls', require: false
-  gem "mocha"
+  gem 'guard-minitest'
 end
-  
